@@ -292,11 +292,3 @@ img{max-width:100%}
 .btn.is-off:active{transform:none}
 @media(min-width:1001px){.channel[data-wide]{grid-column:span 2}}
 @media(min-width:641px) and (max-width:1000px){.channel[data-wide]{grid-column:span 2}}
-
-/* event flyers */
-.flyer{position:relative; display:block; max-width:420px; margin-top:var(--s-4); border-radius:var(--radius-sm); overflow:hidden; border:1px solid var(--line); background:var(--surface-2)}
-.flyer img{display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; transition:transform .35s var(--ease)}
-.flyer:hover{text-decoration:none}
-.flyer:hover img{transform:scale(1.03)}
-.flyer-hint{position:absolute; right:10px; bottom:10px; display:inline-flex; align-items:center; gap:6px; padding:6px 12px; border-radius:var(--radius-pill); background:rgba(11,14,23,.82); color:#fff; font-size:.8rem; font-weight:600}
-@media(prefers-reduced-motion:reduce){.flyer:hover img{transform:none}}

@@ -71,7 +71,7 @@
       var a = items[idx];
       var thumb = a.querySelector('img');
       img.src = a.getAttribute('href');
-      img.alt = thumb ? thumb.alt : '';
+      img.alt = thumb ? thumb.alt : (a.getAttribute('data-alt') || '');
       cap.innerHTML = '';
       cap.appendChild(document.createTextNode(a.getAttribute('data-caption') || ''));
       var n = document.createElement('small');
